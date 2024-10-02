@@ -8,12 +8,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
     <Grid x:Name="MainGrid">
-        
+
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="10,10,416,242" />
         <ScottPlot:WpfPlot x:Name="WpfPlot2" Margin="400,10,10,242" />
-        
+
         <TextBlock Margin="48,270,701,144">U=10 B</TextBlock>
-        
+
         <Grid Margin="104,260,400,10" x:Name="table" ShowGridLines="True" >
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
@@ -28,10 +28,10 @@
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
-                
-               
-                
-               
+
+
+
+
             </Grid.ColumnDefinitions>
 
             <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" >f Гц</TextBlock>
@@ -40,22 +40,22 @@
             <TextBlock Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" >300</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" >400</TextBlock>
             <TextBlock Grid.Column="0" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" >500</TextBlock>
-            
-            
+
+
             <TextBlock Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" >Ur измер.</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >7.1</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" >6.8</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" >6.3</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" >5.8</TextBlock>
             <TextBlock Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" >5.3</TextBlock>
-            
+
             <TextBlock Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" >Uk измер.</TextBlock>
             <TextBlock Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >3.4</TextBlock>
             <TextBlock Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" >4.4</TextBlock>
             <TextBlock Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" >5.3</TextBlock>
             <TextBlock Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" >6.3</TextBlock>
             <TextBlock Grid.Column="2" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" >6.9</TextBlock>
-            
+
             <TextBlock Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" >Ф измер.</TextBlock>
             <TextBlock Grid.Column="3" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >9</TextBlock>
             <TextBlock Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" >17</TextBlock>
@@ -63,6 +63,7 @@
             <TextBlock Grid.Column="3" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" >31</TextBlock>
             <TextBlock Grid.Column="3" Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center" >36</TextBlock>
         </Grid>
-
+        <Button HorizontalAlignment="Left" Height="39" Width="15" Content="2" Click="Button_Click_2" />
+        <Button HorizontalAlignment="Left" Height="39" Width="15" Content="3" Click="Button_Click_3" Margin="0,266,0,179" />
     </Grid>
 </Window>

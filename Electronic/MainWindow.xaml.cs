@@ -114,7 +114,9 @@ namespace Electronic
             Zgraph.LegendText = "Z";
            var Igraph = WpfPlot1.Plot.Add.Scatter(f, Is);
             Igraph.LegendText = "I";
-         
+
+            WpfPlot1.Plot.XLabel("Ф, Гц");
+
             WpfPlot1.Refresh();
 
           var Urgraph =  WpfPlot2.Plot.Add.Scatter(f, Urs);
@@ -123,11 +125,24 @@ namespace Electronic
             Ukgraph.LegendText = "Uk";
             var Fgraph = WpfPlot2.Plot.Add.Scatter(f, F);
             Fgraph.LegendText = "F";
+            WpfPlot2.Plot.XLabel("Ф, Гц");
+
             WpfPlot2.Refresh();
 
 
 
 
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Window2 laba2 = new Window2();
+            laba2.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
 
         }
     }

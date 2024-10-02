@@ -1,0 +1,19 @@
+﻿<Window x:Class="Electronic.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Electronic"
+         xmlns:ScottPlot="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid x:Name="MainGrid" >
+
+        <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="10,10,416,242" />
+        <ScottPlot:WpfPlot x:Name="WpfPlot2" Margin="400,10,10,242" />
+
+        <Button Width="12" Height="39" HorizontalAlignment="Left"  Click="Button_Click_1">1</Button>
+        <Button Width="12" Height="39" HorizontalAlignment="Left" Margin="0,274,0,121" Click="Button_Click_3" >3</Button>
+
+    </Grid>
+</Window>
