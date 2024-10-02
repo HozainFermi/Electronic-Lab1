@@ -57,7 +57,9 @@ namespace Electronic
                 Uks[i] = (float)Math.Round((decimal)Uks[i], 2);
 
                 F[i] = (float)Math.Atan2(Xls[i], Rk + R);
+                F[i] = (float)F[i]*(180/(float)(Math.PI));
                 F[i] = (float)Math.Round((decimal)F[i], 2);
+
 
             }
 
@@ -94,11 +96,12 @@ namespace Electronic
             column.Binding = new Binding("Uk");
             dg.Columns.Add(column);
             column = new DataGridTextColumn();
-            column.Header = "F";
+            column.Header = "Ф";
             column.Binding = new Binding("F");
+            dg.Columns.Add(column);
             //
 
-            for(int i = 0; i < f.Length; i++)
+            for (int i = 0; i < f.Length; i++)
             {
                 dg.Items.Add(new DataItem { XL = Xls[i], Zk = Zks[i], Z = Zs[i], I = Is[i], Ur = Urs[i] , Uk = Uks[i] , F = F[i] });
 
