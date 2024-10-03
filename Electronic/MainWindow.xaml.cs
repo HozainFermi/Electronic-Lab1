@@ -110,10 +110,18 @@ namespace Electronic
             //Plots
            var Xgraph = WpfPlot1.Plot.Add.Scatter(f, Xls);
             Xgraph.LegendText = "XL";
+            Xgraph.Axes.YAxis = WpfPlot1.Plot.Axes.Left;
+            
            var Zgraph = WpfPlot1.Plot.Add.Scatter(f, Zs);
             Zgraph.LegendText = "Z";
-           var Igraph = WpfPlot1.Plot.Add.Scatter(f, Is);
+            Zgraph.Axes.YAxis = WpfPlot1.Plot.Axes.Left;
+
+            var Igraph = WpfPlot1.Plot.Add.Scatter(f, Is);
             Igraph.LegendText = "I";
+            Igraph.Axes.YAxis = WpfPlot1.Plot.Axes.Right;
+
+            WpfPlot1.Plot.Axes.Right.Label.Text = "мА";
+            WpfPlot1.Plot.Axes.Left.Label.Text = "Ом";
 
             WpfPlot1.Plot.XLabel("Ф, Гц");
 
@@ -121,11 +129,19 @@ namespace Electronic
 
           var Urgraph =  WpfPlot2.Plot.Add.Scatter(f, Urs);
             Urgraph.LegendText = "Ur";
+            Urgraph.Axes.YAxis = WpfPlot2.Plot.Axes.Left;
+
             var Ukgraph =  WpfPlot2.Plot.Add.Scatter(f, Uks);
             Ukgraph.LegendText = "Uk";
+            Ukgraph.Axes.YAxis = WpfPlot2.Plot.Axes.Left;
+
             var Fgraph = WpfPlot2.Plot.Add.Scatter(f, F);
             Fgraph.LegendText = "F";
             WpfPlot2.Plot.XLabel("Ф, Гц");
+            Fgraph.Axes.YAxis = WpfPlot2.Plot.Axes.Right;
+
+            WpfPlot2.Plot.Axes.Right.Label.Text = "Град";
+            WpfPlot2.Plot.Axes.Left.Label.Text = "В";
 
             WpfPlot2.Refresh();
 

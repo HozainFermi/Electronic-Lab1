@@ -102,12 +102,19 @@ namespace Electronic
 
             var Xgraph = WpfPlot1.Plot.Add.Scatter(f, Xcs);
             Xgraph.LegendText = "XL";
+            Xgraph.Axes.YAxis = WpfPlot1.Plot.Axes.Left;
+
             var Zgraph = WpfPlot1.Plot.Add.Scatter(f, Zcs);
             Zgraph.LegendText = "Z";
+            Zgraph.Axes.YAxis = WpfPlot1.Plot.Axes.Left;
+
             var Igraph = WpfPlot1.Plot.Add.Scatter(f, Is);
             Igraph.LegendText = "I";
+            Igraph.Axes.YAxis = WpfPlot1.Plot.Axes.Right;
 
             WpfPlot1.Plot.XLabel("Ф, Гц");
+            WpfPlot1.Plot.Axes.Right.Label.Text = "А";
+            WpfPlot1.Plot.Axes.Left.Label.Text = "Ом";
 
             WpfPlot1.Refresh();
 
