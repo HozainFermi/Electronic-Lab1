@@ -11,8 +11,10 @@
 
         <ScottPlot:WpfPlot x:Name="WpfPlot1" Margin="10,10,416,242" />
         <ScottPlot:WpfPlot x:Name="WpfPlot2" Margin="400,10,10,242" />
+        <ScottPlot:WpfPlot x:Name="WpfPlot3" Margin="10,207,431,10"/>
+        <ScottPlot:WpfPlot x:Name="WpfPlot4" Margin="431,207,10,10"/>
 
-        
+
 
     </Grid>
 </Window>
